@@ -1,0 +1,1253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+
+
+/* CSS Document */
+:root {
+    --code-background: #282a36;
+    --code-current-line: #44475a;
+    --code-section: #44475a;
+    --code-foreground: #f8f8f2;
+    --code-comment: #6272a4;
+    --code-cyan: #8be9fd;
+    --code-green: #50fa7b;
+    --code-orange: #ffb86c;
+    --code-pink: #ff79c6;
+    --code-purple: #bd93f9;
+    --code-red: #ff5555;
+    --code-yellow: #f1fa8c;
+    --code-math: #151320;
+}
+
+/** code highlight */
+
+.cm-s-inner .cm-variable {
+    color: var(--code-green)
+}
+
+.cm-s-inner .cm-operator {
+    color: var(--code-pink)
+}
+
+.cm-s-inner .cm-property {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-keyword {
+    color: var(--code-pink);
+}
+
+.cm-s-inner .cm-tag {
+    color: var(--code-pink);
+}
+
+.cm-s-inner .cm-attribute {
+    color: var(--code-green);
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--code-foreground);
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string,
+.cm-s-inner .cm-string-2 {
+    color: var(--code-yellow);
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: var(--code-comment);
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner.cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-def {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-builtin {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-bracket {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-number {
+    color: var(--code-purple);
+}
+
+.cm-s-inner .cm-variable {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: var(--code-cyan);
+    font-style: italic;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: var(--code-current-line);
+    color: #fff !important;
+    text-shadow: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('file:///Users/keepcup/Library/Application%20Support/abnerworks.Typora/themes/');
+:root {
+  --bg-color: #FFF;
+  --text-color: #222;
+  --meta-content-color: #06B;
+  --primary-color: #24D;
+  --active-file-bg-color: rgba(51, 51, 51, 0.05);
+  --active-file-border-color: #24D;
+  --side-bar-bg-color: #EEE;
+  --item-hover-bg-color: rgba(127, 127, 127, 0.1);
+  --item-hover-text-color: inherit;
+  --monospace: 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', monospace;
+}
+html,
+body,
+#write {
+  background: #FFF;
+  font: 400 1rem/1.75 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+#write,
+.markdown-section {
+  max-width: 40em;
+  padding-left: 2em;
+  padding-right: 2em;
+  /* ============================== 代码 引用 ==============================*/
+}
+#write *,
+.markdown-section *,
+#write *::before,
+.markdown-section *::before,
+#write *::after,
+.markdown-section *::after {
+  word-break: normal;
+  box-sizing: border-box;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#write h1,
+.markdown-section h1,
+#write h1 *,
+.markdown-section h1 *,
+#write h2,
+.markdown-section h2,
+#write h2 *,
+.markdown-section h2 *,
+#write h3,
+.markdown-section h3,
+#write h3 *,
+.markdown-section h3 *,
+#write h4,
+.markdown-section h4,
+#write h4 *,
+.markdown-section h4 *,
+#write h5,
+.markdown-section h5,
+#write h5 *,
+.markdown-section h5 *,
+#write h6,
+.markdown-section h6,
+#write h6 *,
+.markdown-section h6 * {
+  color: #24D;
+  font-family: 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  font-weight: normal;
+  padding: 0 !important;
+  margin: 1em 0 0 !important;
+  line-height: 1.25 !important;
+}
+#write h1::before,
+.markdown-section h1::before,
+#write h1 *::before,
+.markdown-section h1 *::before,
+#write h2::before,
+.markdown-section h2::before,
+#write h2 *::before,
+.markdown-section h2 *::before,
+#write h3::before,
+.markdown-section h3::before,
+#write h3 *::before,
+.markdown-section h3 *::before,
+#write h4::before,
+.markdown-section h4::before,
+#write h4 *::before,
+.markdown-section h4 *::before,
+#write h5::before,
+.markdown-section h5::before,
+#write h5 *::before,
+.markdown-section h5 *::before,
+#write h6::before,
+.markdown-section h6::before,
+#write h6 *::before,
+.markdown-section h6 *::before {
+  font: 400 0.8em 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  color: inherit;
+  margin-right: 0.5rem;
+  border: none;
+  position: relative;
+  left: unset;
+  top: unset;
+  float: none;
+  padding: 0;
+  vertical-align: baseline;
+  opacity: 1 !important;
+}
+#write h1.md-focus:after,
+.markdown-section h1.md-focus:after,
+#write h1 *.md-focus:after,
+.markdown-section h1 *.md-focus:after,
+#write h2.md-focus:after,
+.markdown-section h2.md-focus:after,
+#write h2 *.md-focus:after,
+.markdown-section h2 *.md-focus:after,
+#write h3.md-focus:after,
+.markdown-section h3.md-focus:after,
+#write h3 *.md-focus:after,
+.markdown-section h3 *.md-focus:after,
+#write h4.md-focus:after,
+.markdown-section h4.md-focus:after,
+#write h4 *.md-focus:after,
+.markdown-section h4 *.md-focus:after,
+#write h5.md-focus:after,
+.markdown-section h5.md-focus:after,
+#write h5 *.md-focus:after,
+.markdown-section h5 *.md-focus:after,
+#write h6.md-focus:after,
+.markdown-section h6.md-focus:after,
+#write h6 *.md-focus:after,
+.markdown-section h6 *.md-focus:after {
+  color: #BBB;
+  font-size: 0.8em;
+}
+#write h1:first-child,
+.markdown-section h1:first-child {
+  padding-top: 3em !important;
+}
+#write h1 *,
+.markdown-section h1 * {
+  font: 2rem 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+}
+#write h2,
+.markdown-section h2 {
+  border: none;
+  border-top: 1px solid #24D;
+  padding-top: 1em !important;
+  margin-top: 2em !important;
+  display: block;
+}
+#write h2,
+.markdown-section h2,
+#write h2 *,
+.markdown-section h2 * {
+  font-size: 1.75rem;
+}
+#write h3,
+.markdown-section h3,
+#write h3 *,
+.markdown-section h3 * {
+  font-size: 1.5rem;
+}
+#write h4,
+.markdown-section h4,
+#write h4 *,
+.markdown-section h4 * {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+#write h5,
+.markdown-section h5,
+#write h5 *,
+.markdown-section h5 * {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+#write h6,
+.markdown-section h6,
+#write h6 *,
+.markdown-section h6 * {
+  font-size: 1rem;
+  font-weight: 700;
+}
+#write h1,
+.markdown-section h1 {
+  counter-reset: h2;
+}
+#write h2,
+.markdown-section h2 {
+  counter-reset: h3;
+}
+#write h3,
+.markdown-section h3 {
+  counter-reset: h4;
+}
+#write h4,
+.markdown-section h4 {
+  counter-reset: h5;
+}
+#write h5,
+.markdown-section h5 {
+  counter-reset: h6;
+}
+#write h2::before,
+.markdown-section h2::before {
+  counter-increment: h2;
+  content: counter(h2) ".";
+}
+#write h3::before,
+.markdown-section h3::before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3);
+}
+#write h4::before,
+.markdown-section h4::before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4);
+}
+#write h5::before,
+.markdown-section h5::before {
+  counter-increment: h5;
+  content: none;
+}
+#write h6::before,
+.markdown-section h6::before {
+  counter-increment: h6;
+  content: none;
+}
+#write h2.md-focus::after,
+.markdown-section h2.md-focus::after {
+  content: ' H2';
+}
+#write h3.md-focus::after,
+.markdown-section h3.md-focus::after {
+  content: ' H3';
+}
+#write h4.md-focus::after,
+.markdown-section h4.md-focus::after {
+  content: ' H4';
+}
+#write h5.md-focus::after,
+.markdown-section h5.md-focus::after {
+  content: ' H5';
+}
+#write h6.md-focus::after,
+.markdown-section h6.md-focus::after {
+  content: ' H6';
+}
+#write p,
+.markdown-section p,
+#write pre.md-fences,
+.markdown-section pre.md-fences,
+#write pre[data-lang],
+.markdown-section pre[data-lang],
+#write blockquote,
+.markdown-section blockquote,
+#write table:not(.md-grid-board),
+.markdown-section table:not(.md-grid-board),
+#write ul,
+.markdown-section ul,
+#write ol,
+.markdown-section ol,
+#write hr,
+.markdown-section hr {
+  margin: 1rem 0;
+}
+#write hr,
+.markdown-section hr {
+  height: 0;
+  border: none;
+  border-bottom: 1px dotted #24D;
+}
+#write .inline-with-bg,
+.markdown-section .inline-with-bg {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+}
+#write del,
+.markdown-section del,
+#write q,
+.markdown-section q,
+#write mark,
+.markdown-section mark {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+}
+#write strong,
+.markdown-section strong,
+#write b,
+.markdown-section b,
+#write em,
+.markdown-section em {
+  margin: 0 0.1rem;
+}
+#write u,
+.markdown-section u {
+  margin: 0 0.1rem;
+}
+#write u strong,
+.markdown-section u strong,
+#write u b,
+.markdown-section u b,
+#write u em,
+.markdown-section u em {
+  margin: 0;
+}
+#write p a,
+.markdown-section p a,
+#write table a,
+.markdown-section table a,
+#write li a,
+.markdown-section li a {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+  color: #93F;
+  padding: 0;
+  transition: 1s;
+}
+#write a:hover,
+.markdown-section a:hover {
+  color: #F30;
+  background: #FF4;
+  text-decoration-color: red;
+  transition: 0.3s;
+}
+#write a.anchor,
+.markdown-section a.anchor {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+#write a.anchor:hover,
+.markdown-section a.anchor:hover {
+  background: #FF4;
+}
+#write del,
+.markdown-section del {
+  color: rgba(34, 34, 34, 0.5);
+  background: #EEE;
+}
+#write u,
+.markdown-section u {
+  text-decoration-color: #F30;
+}
+#write mark,
+.markdown-section mark {
+  color: #F30;
+  background: #FF4;
+}
+#write mark u,
+.markdown-section mark u {
+  text-decoration: none;
+  border-bottom: 1.5px solid #F30;
+  background: #FF4;
+}
+#write em,
+.markdown-section em {
+  color: #F69;
+}
+#write q,
+.markdown-section q {
+  font-size: 0.9em;
+  background: #EEE;
+  opacity: 0.5;
+}
+#write q::before,
+.markdown-section q::before,
+#write q::after,
+.markdown-section q::after {
+  content: '';
+}
+#write q:hover,
+.markdown-section q:hover {
+  opacity: 1;
+}
+#write .md-linebreak-mark,
+.markdown-section .md-linebreak-mark,
+#write .md-raw-html-src-content,
+.markdown-section .md-raw-html-src-content,
+#write .md-raw-inline,
+.markdown-section .md-raw-inline,
+#write .md-tag,
+.markdown-section .md-tag,
+#write [md-inline=linebreak],
+.markdown-section [md-inline=linebreak] {
+  opacity: 1;
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+  background: #EEE;
+  color: inherit;
+}
+#write ruby > rt,
+.markdown-section ruby > rt {
+  font-size: clamp(10px, 0.5em, 99em) !important;
+}
+#write code,
+.markdown-section code,
+#write kbd,
+.markdown-section kbd,
+#write code:not([class*="lang-"]):not([class*="language-"]),
+.markdown-section code:not([class*="lang-"]):not([class*="language-"]) {
+  color: #AE2;
+  background: #333;
+  border: 0px solid transparent;
+  border-radius: 0.25em;
+  padding: 0.1em 0.3rem;
+  margin: 0 0.1rem;
+  font: bold 0.9em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+  white-space: pre-wrap;
+  min-width: auto;
+}
+#write .code_block,
+.markdown-section .code_block {
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write pre[data-lang],
+.markdown-section pre[data-lang] {
+  border-radius: 0;
+  background: none;
+}
+#write pre[data-lang] code,
+.markdown-section pre[data-lang] code {
+  margin: 0;
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write pre[data-lang]::after,
+.markdown-section pre[data-lang]::after {
+  color: #FFF;
+  top: 0;
+  right: 1em;
+  background: #FFF2;
+  padding: 0.2em 0.8em;
+  border-radius: 0 0 0.5em 0.5em;
+}
+#write pre.md-fences,
+.markdown-section pre.md-fences {
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write .code-tooltip,
+.markdown-section .code-tooltip {
+  box-shadow: none;
+  border-radius: 0.5em;
+  border: 0px solid transparent;
+}
+#write kbd,
+.markdown-section kbd {
+  box-shadow: none;
+}
+#write kbd + kbd,
+.markdown-section kbd + kbd {
+  margin: 0 0.1rem;
+}
+#write blockquote,
+.markdown-section blockquote {
+  padding: 0.75rem 0.75rem;
+  border-left: 4px solid #CCC;
+  background: rgba(238, 238, 238, 0.5);
+  color: rgba(34, 34, 34, 0.75);
+  border-radius: 0 0.5em 0.5em 0;
+  transition: 1s;
+}
+#write blockquote p,
+.markdown-section blockquote p {
+  font: 0.9em/1.5 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  margin: 0.75rem 0;
+}
+#write blockquote p:first-child,
+.markdown-section blockquote p:first-child {
+  margin-top: 0;
+}
+#write blockquote p:last-child,
+.markdown-section blockquote p:last-child {
+  margin-bottom: 0;
+}
+#write blockquote:hover,
+.markdown-section blockquote:hover {
+  transition: 0.2s;
+  border-left: 4px solid #24D;
+  background: #EEE;
+  color: #222;
+}
+#write .md-image,
+.markdown-section .md-image,
+#write img,
+.markdown-section img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 2px #0000;
+  transition: all 0.3s !important;
+}
+#write .md-image:hover,
+.markdown-section .md-image:hover,
+#write img:hover,
+.markdown-section img:hover {
+  box-shadow: 0 0 2px #0004;
+}
+#write .md-image + .md-softbreak,
+.markdown-section .md-image + .md-softbreak {
+  height: 1em;
+}
+#write ul,
+.markdown-section ul,
+#write ol,
+.markdown-section ol {
+  margin: 0.5em 0;
+  padding-left: 3ch;
+}
+#write ul li,
+.markdown-section ul li,
+#write ol li,
+.markdown-section ol li {
+  margin: 0.5em 0;
+}
+#write ul ul,
+.markdown-section ul ul,
+#write ol ul,
+.markdown-section ol ul,
+#write ul ol,
+.markdown-section ul ol,
+#write ol ol,
+.markdown-section ol ol {
+  margin: 0.3em 0;
+}
+#write ul ul li,
+.markdown-section ul ul li,
+#write ol ul li,
+.markdown-section ol ul li,
+#write ul ol li,
+.markdown-section ul ol li,
+#write ol ol li,
+.markdown-section ol ol li {
+  margin: 0.3em 0;
+}
+#write li p,
+.markdown-section li p {
+  margin: 0;
+}
+#write ol li::marker,
+.markdown-section ol li::marker {
+  font: 0.9em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+}
+#write .task-list-item,
+.markdown-section .task-list-item {
+  margin-left: 0 !important;
+  position: relative;
+}
+#write .task-list-item input[type="checkbox"],
+.markdown-section .task-list-item input[type="checkbox"] {
+  width: 1.5em !important;
+  margin: 0;
+  position: absolute;
+  left: -1.5em;
+  top: 0.5em;
+}
+#write table:not(.md-grid-board),
+.markdown-section table:not(.md-grid-board),
+#write .md-table,
+.markdown-section .md-table {
+  display: table;
+  width: auto;
+  border-radius: 0.5em;
+  overflow: hidden;
+  font: 0.9rem/1.75 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+  border-collapse: separate;
+  border: 1px solid #CCC;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th,
+#write table:not(.md-grid-board) td,
+.markdown-section table:not(.md-grid-board) td,
+#write .md-table td,
+.markdown-section .md-table td {
+  padding: 0.5em clamp(0.5em, 1vw, 2em);
+  vertical-align: top;
+  border: none;
+}
+#write table:not(.md-grid-board) th:not(:last-child),
+.markdown-section table:not(.md-grid-board) th:not(:last-child),
+#write .md-table th:not(:last-child),
+.markdown-section .md-table th:not(:last-child),
+#write table:not(.md-grid-board) td:not(:last-child),
+.markdown-section table:not(.md-grid-board) td:not(:last-child),
+#write .md-table td:not(:last-child),
+.markdown-section .md-table td:not(:last-child) {
+  border-right: 1px dashed #8888;
+}
+#write table:not(.md-grid-board) tr:last-child td,
+.markdown-section table:not(.md-grid-board) tr:last-child td,
+#write .md-table tr:last-child td,
+.markdown-section .md-table tr:last-child td {
+  border-bottom: none;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th {
+  line-height: 1.5em;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th,
+#write table:not(.md-grid-board) td,
+.markdown-section table:not(.md-grid-board) td,
+#write .md-table td,
+.markdown-section .md-table td {
+  border-bottom: 1px solid #CCC;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th {
+  background: #EEE;
+}
+#write table:not(.md-grid-board) tbody tr:nth-child(even),
+.markdown-section table:not(.md-grid-board) tbody tr:nth-child(even),
+#write .md-table tbody tr:nth-child(even),
+.markdown-section .md-table tbody tr:nth-child(even) {
+  background: rgba(238, 238, 238, 0.25);
+}
+#write table:not(.md-grid-board) tbody tr:nth-child(odd),
+.markdown-section table:not(.md-grid-board) tbody tr:nth-child(odd),
+#write .md-table tbody tr:nth-child(odd),
+.markdown-section .md-table tbody tr:nth-child(odd) {
+  background: none;
+}
+#write .table_light,
+.markdown-section .table_light {
+  border: 1px solid #CCC;
+}
+#write .table_light th,
+.markdown-section .table_light th,
+#write .table_light td,
+.markdown-section .table_light td {
+  border-bottom: 1px solid #CCC;
+}
+#write .table_light th,
+.markdown-section .table_light th {
+  background: #EEE;
+}
+#write .table_light tbody tr:nth-child(even),
+.markdown-section .table_light tbody tr:nth-child(even) {
+  background: rgba(238, 238, 238, 0.25);
+}
+#write .table_light tbody tr:nth-child(odd),
+.markdown-section .table_light tbody tr:nth-child(odd) {
+  background: none;
+}
+#write .table_dark th,
+.markdown-section .table_dark th,
+#write .table_dark td,
+.markdown-section .table_dark td {
+  color: white;
+}
+#write .table_dark th,
+.markdown-section .table_dark th {
+  background: #333;
+  color: #F69;
+}
+#write .table_dark tbody tr:nth-child(even),
+.markdown-section .table_dark tbody tr:nth-child(even) {
+  background: #595959;
+}
+#write .table_dark tbody tr:nth-child(odd),
+.markdown-section .table_dark tbody tr:nth-child(odd) {
+  background: #666666;
+}
+#write .md-def-name,
+.markdown-section .md-def-name {
+  color: #888;
+}
+#write .md-def-name::before,
+.markdown-section .md-def-name::before,
+#write .md-def-name::after,
+.markdown-section .md-def-name::after {
+  color: #888;
+}
+#write .md-fences[lang="mermaid"]:not(.md-focus),
+.markdown-section .md-fences[lang="mermaid"]:not(.md-focus),
+#write .md-diagram-panel,
+.markdown-section .md-diagram-panel,
+#write .mermaid,
+.markdown-section .mermaid {
+  background: #FFF;
+}
+#write .md-fences[lang="mermaid"]:not(.md-focus) *,
+.markdown-section .md-fences[lang="mermaid"]:not(.md-focus) *,
+#write .md-diagram-panel *,
+.markdown-section .md-diagram-panel *,
+#write .mermaid *,
+.markdown-section .mermaid * {
+  font-family: 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif !important;
+}
+#write pre.md-fences-advanced.md-focus[lang="mermaid"],
+.markdown-section pre.md-fences-advanced.md-focus[lang="mermaid"] {
+  margin-bottom: 1em !important;
+}
+#write pre.md-fences-advanced.md-focus .md-fences-adv-panel,
+.markdown-section pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  position: relative;
+  background: #FFF;
+  border-radius: 0 0 0.5em 0.5em;
+  margin: 0.75em -1em -0.75em;
+  width: calc(100% +  1em*2);
+  border: 1px solid #333;
+}
+#write .mermaid,
+.markdown-section .mermaid {
+  display: flex;
+  justify-content: center;
+}
+#write .mermaid .messageText,
+.markdown-section .mermaid .messageText {
+  stroke: none !important;
+}
+table .md-br,
+table .md-br-content {
+  font-size: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container)::before,
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container)::after {
+  color: #C8C8C8 !important;
+  color: var(--blur-text-color) !important;
+}
+#outline-content {
+  padding: 0 0.5em;
+  font: 400 0.8em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+}
+#outline-content li ul {
+  padding-left: 2ch;
+}
+#outline-content li .outline-item {
+  padding: 0.5em 0.5em !important;
+  margin: 0;
+  border: none;
+  border-radius: 0.25em;
+}
+#outline-content li .outline-item .outline-expander {
+  padding-right: 1ch;
+}
+#outline-content li .outline-item .outline-label {
+  font: 1.25em 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+}
+#outline-content li .outline-item .outline-label:hover {
+  text-decoration: none;
+}
+#outline-content li .outline-item::before {
+  display: inline-block;
+  flex: none;
+  padding: 0.3em 0.25em;
+  position: absolute;
+  text-align: right;
+  opacity: 0;
+  transition: all 3s;
+}
+#outline-content li .outline-item::before:hover {
+  color: #FFF;
+  background: red;
+  border-radius: 0.25em;
+  z-index: 99;
+}
+#outline-content li .outline-item:hover::before,
+#outline-content li .outline-item .outline-active::before {
+  opacity: 0.75;
+  transition: all 0s;
+}
+#outline-content li .outline-item:hover {
+  background-color: inherit;
+}
+#outline-content li .outline-item .outline-active {
+  color: #24D;
+  font-weight: bold !important;
+}
+#outline-content .outline-h1 {
+  counter-reset: h2;
+  overflow: hidden;
+}
+#outline-content .outline-h1 > ul {
+  padding-left: 2.5ch;
+}
+#outline-content .outline-h2 {
+  padding: 2px 0;
+  counter-reset: h3;
+  counter-increment: h2;
+}
+#outline-content .outline-h2::before {
+  content: '';
+  display: block;
+  height: 0px;
+  width: 200%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  border-top: 0.5px solid #0001;
+}
+#outline-content .outline-h2 > .outline-item::before {
+  content: counter(h2);
+  min-width: 2ch;
+  left: -2ch;
+  opacity: 0.75;
+}
+#outline-content .outline-h3 {
+  counter-reset: h4;
+  counter-increment: h3;
+}
+#outline-content .outline-h3 > .outline-item::before {
+  content: counter(h2) "." counter(h3);
+  min-width: 4ch;
+  left: -4ch;
+}
+#outline-content .outline-h4 {
+  counter-reset: h5;
+  counter-increment: h4;
+}
+#outline-content .outline-h4 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4);
+  min-width: 6ch;
+  left: -6ch;
+}
+#outline-content .outline-h5 {
+  counter-reset: h6;
+  counter-increment: h5;
+}
+#outline-content .outline-h5 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5);
+  min-width: 8ch;
+  left: -8ch;
+}
+#outline-content .outline-h6 {
+  counter-increment: h6;
+}
+#outline-content .outline-h6 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6);
+  min-width: 10ch;
+  left: -10ch;
+}
+.sidebar > h1 .app-name-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar > h1 .app-name-link img {
+  max-height: 3em;
+}
+.sidebar-nav {
+  margin: 0;
+}
+.sidebar-nav > a {
+  line-height: 1.25em;
+}
+.sidebar-nav > a strong {
+  font-weight: normal;
+}
+.sidebar-nav.active {
+  position: relative;
+}
+.sidebar-nav.active:before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: -50%;
+  background: #ffffff;
+  z-index: -1;
+}
+.sidebar-nav.active > a {
+  border-color: #24D;
+  color: #24D;
+}
+.sidebar-nav.active > a strong {
+  font-weight: bold;
+  color: #24D;
+}
+.markdown-section {
+  padding: env(safe-area-inset-top) calc(2em + env(safe-area-inset-left) + env(safe-area-inset-right) + 1vw) env(safe-area-inset-bottom);
+}
+.sidebar-toggle .sidebar-toggle-button {
+  zoom: 0.8;
+  opacity: 0.5;
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>Gopher必看的Go语言圣经，阅读笔记在这里 - 掘金</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><p><span>   </span></p><p><a href='https://juejin.cn/user/2133495196168221'><img src="https://p3-passport.byteimg.com/img/user-avatar/aee1abff8ee4ce6803a701c704579e84~100x100.awebp" referrerpolicy="no-referrer"></a></p><p><span>2022年08月31日 11:28 ·  </span></p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e072830c06a34638930a5c375b207f0c~tplv-k3u1fbpfcp-zoom-crop-mark:3024:3024:3024:1702.awebp?" referrerpolicy="no-referrer" alt="Gopher必看的Go语言圣经，阅读笔记在这里"><span>  </span></p><h2 id='go圣经'><span>Go圣经</span></h2><p><span>#Go #代码规范</span></p><h2 id='chapter-1-入门'><span>Chapter 1 入门</span></h2><p><strong><span>1.1 Hello, World</span></strong></p><ul><li><p><span>Go语言编译器会主动将特定符号后的换行符转换为分号, 因此不需要在语句后加分号</span></p><ul><li><span>这样一来, 很容易就能理解为什么函数参数里换行写的时候一定要加逗号了, ‘,’ 后的换行符不会被转换为分号</span></li><li><span>x+y 可以在+后面换行, 因为加号后面不会添加换行符, 如果是在加号前面(也就是x后面) 换行, 就会编译错误</span></li></ul></li></ul><p><strong><span>1.2 命令行参数</span></strong></p><ul><li><span>在os包的外部, 使用os.Args访问命令行参数变量</span></li><li><span>Os.Args 实际上是一个</span><span>[</span><span>]</span><span>string, slice的区间索引采取左闭右开的策略</span></li><li><span>Os.Args</span><span>[</span><span>0</span><span>]</span><span> 是命令本身的名字, 其他元素是命令传入的参数</span></li><li><span>Var 申明的变量, 默认为零值</span></li></ul><p><strong><span>1.3 查找重复行</span></strong></p><ul><li><p><span>使用map</span><span>[</span><span>string</span><span>]</span><span>int 来保存各行的出现次数</span></p></li><li><p><span>Map的迭代顺序是随机的</span></p></li><li><p><span>bufio.Scanner( os.Stdin) 从标准输入中读取内容</span></p></li><li><p><span>%v =》 变量的自然形式natural format</span></p></li><li><p><span>Os.Open( ) 打开具名文件进行操作</span></p><ul><li><span>需要调用close( ) 关闭文件</span></li></ul></li><li><p><span>参数传入map变量时, 是一个引用</span></p></li><li><p><span>ioutil.ReadFile( )一次性读入, 然后通过string.Split( ) 来切割</span></p></li></ul><p><strong><span>1.4 GIF动画</span></strong></p><p><strong><span>1.5 获取URL</span></strong></p><ul><li><span>Resp,err := http.Get(url)</span></li><li><span>ioutil.ReadAll(resp.Body)</span></li><li><span>resp.Body.Close( )</span></li></ul><p><strong><span>1.6并发获取多个URL</span></strong></p><ul><li><span>goroutine</span></li><li><span>Url从参数获取, 通过通道发送到各goroutine</span></li></ul><p><strong><span>1.7 Web服务</span></strong></p><ul><li><span>HandleFunc()</span></li><li><span>ListenAndServe()</span></li></ul><p><strong><span>1.8 一些补充</span></strong></p><ul><li><span>Go语言的指针, 能取址和赋值, 但是不能++ — 等运算</span></li><li><span>在源文件的开头写注释, 函数之前也写注释描述函数行为</span></li></ul><h2 id='chapter-2-程序结构'><span>Chapter 2 程序结构</span></h2><p><strong><span>2.1 命名</span></strong></p><ul><li><span>命名规则</span></li><li><span>注意是否可以导出</span></li><li><span>Go推荐使用驼峰命名</span></li></ul><p><strong><span>2.2 声明</span></strong></p><p><strong><span>2.3 变量</span></strong></p><ul><li><p><span>Go语言不存在未初始化的变量</span></p></li><li><p><span>Var 形式的声明语句往往是用于需要制定变量类型的地方/ 变量的初始值不重要的地方</span></p></li><li><p><span>指针</span></p><ul><li><p><span>指针虽然不能运算, 但是可以进行相等测试</span></p></li><li><p><span>返回局部变量的地址是安全的</span></p><ul><li><span>不会崩溃</span></li></ul></li></ul></li><li><p><span>new 函数</span></p><ul><li><span>用new 创建变量, 返回新变量的地址</span></li><li><span>是一种语法糖</span></li></ul></li><li><p><span>生命周期</span></p><ul><li><span>变量的有效周期只取决于是否可达</span></li></ul></li></ul><p><strong><span>2.4 赋值</span></strong></p><ul><li><p><span>元组赋值</span></p><ul><li><span>X,y = y,X</span></li><li><span>会先求出右边的值, 然后统一更新左边的值</span></li><li><span>复杂表达式避免使用元组赋值, 每个变量单独赋值语句的可读性更好</span></li></ul></li><li><p><span>可赋值性</span></p><ul><li><span>map、slice 和chan 的元素, 会隐式赋值</span></li></ul></li></ul><p><strong><span>2.5 类型</span></strong></p><ul><li><span>Type 类型名 底层类型</span></li><li><span>一般出现在包级, 首字母大写的话就能导出</span></li><li><span>目前, 中文被认为是小写, 不能导出</span></li><li><span>底层类型相同的类型, 才能允许转型操作</span></li><li><span>底层类型决定了可以用的运算符</span></li></ul><p><strong><span>2.6 包和文件</span></strong></p><ul><li><span>init( )</span></li><li><span>每个包以导入声明的顺序初始化, main包最后初始化</span></li></ul><p><strong><span>2.7 作用域</span></strong></p><ul><li><span>句法块 &amp; 词法块</span></li><li><span>编译器遇到名字引用时, 会先从最内层的词法域向全局的作用域进行, 因此, </span><strong><span>内部声明会屏蔽外部的声明</span></strong></li></ul><h2 id='chapter-3-基本数据类型'><span>Chapter 3 基本数据类型</span></h2><p><strong><span>3.1 整形</span></strong></p><ul><li><span>无符号数往往用于位运算或特殊场景</span></li></ul><p><strong><span>3.2 浮点数</span></strong></p><ul><li><span>浮点数的范围极限在Math包里有 math.MaxFloat</span></li><li><span>Math.IsNaN( ) 测试一个数是否为数字</span></li></ul><p><strong><span>3.3 复数</span></strong></p><ul><li><p><span>complex</span></p><ul><li><span>Var x complex128 = complex(1,2) //1+2i</span></li><li><span>x:= 1 + 2i</span></li></ul></li><li><p><span>Math/cmplx 包里有复数处理的一些函数</span></p></li></ul><p><strong><span>3.4 Boolean</span></strong></p><ul><li><span>布尔表达式可以与 &amp;&amp;, || 结合, 如果左边值已经可以确定整个表达式的值, 就不会再求右边的值(短路行为)</span></li><li><span>&amp;&amp; 的优先级高于 ||</span></li></ul><p><strong><span>3.5 字符串</span></strong></p><ul><li><span>访问超出index range的字节会panic</span></li><li><span>字符串内部不能直接改变</span></li><li><span>用 描述字符串面值, 这样的话就不包含转义字符, 全部都是字面意义</span></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/92cb82a181b4498b82865b574756f78a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 10.png"></p><ul><li><p><span>字符串与</span><span>[</span><span>]</span><span>Byte</span></p><ul><li><span>[</span><span>]</span><span>Byte可以自由修改, string只读</span></li><li><span>两者可以相互转换</span></li></ul></li><li><p><span>Strconv 包提供了转换的函数, 例如Itoa, Atoi</span></p></li><li><p><span>unicode 包提供IsDigit、IsLetter、IsUpper、IsLower等功能</span></p></li></ul><p><strong><span>3.6 常量</span></strong></p><ul><li><span>在编译期计算而不是在运行期</span></li></ul><h2 id='chapter-4-复合数据类型'><span>Chapter 4 复合数据类型</span></h2><p><strong><span>4.1 数组</span></strong></p><ul><li><span>固定长度, 数组的长度是数组的一个组成部分</span></li><li><span>数组长度在编译阶段确定, 必须是常量表达式</span></li><li><span>数组可以比较, 元素全部相等时, 两个数组才相等</span></li><li><span>因为函数参数为大数组时, 拷贝太低效, 所以设计为了传入引用</span></li></ul><p><strong><span>4.2 Slice</span></strong></p><ul><li><p><span>很像数组,但没有固定长度</span></p></li><li><p><span>底层引用一个数组</span></p></li><li><p><span>切片操作, 左闭右开</span></p></li><li><p><span>复制slice只是给底层数组一个别名</span></p></li><li><p><span>传入函数为引用</span></p></li><li><p><strong><span>Slice之间不能比较</span></strong></p></li><li><p><span>判断slice是否为空, 使用 len(slice)==0</span></p></li><li><p><span>append( )</span></p><ul><li><p><span>判断容量是否足够</span></p><ul><li><p><span>足够的话</span></p><ul><li><span>拓展slice</span></li><li><span>添加元素</span></li></ul></li><li><p><span>不够的话</span></p><ul><li><span>分配</span><strong><span>新slice</span></strong><span>保存结果(改变了底层数组)</span></li><li><span>复制原有的元素</span></li><li><span>添加元素</span></li><li><span>为了提高效率, 新分配的数组一般略大于所需要的大小, 避免多次内存分配</span></li></ul></li></ul></li></ul></li><li><p><span>Slice数据部分是间接引用的, 但是长度等属性是直接引用的</span></p></li></ul><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/37b41aa4073e4b549351c436b13cf948~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 12.png"></p><ul><li><p><span>Slice的内存技巧</span></p><ul><li><span>模拟stack</span></li></ul></li></ul><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ec699b74b1b411baa77733da2c059ab~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 13.png"><span> </span><span>*</span><span> 移除某一位</span></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a569268ede1c4d43ba44b7be4b6fb131~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 14.png"></p><p><strong><span>4.3 Map</span></strong></p><ul><li><p><span>无序的k/v对集合</span></p><ul><li><p><span>Key 必须支持 == , 使得可以判断某key是否存在</span></p></li><li><p><span>delete( ) 删除元素</span></p></li><li><p><span>Map中的元素不是变量, 不能取址</span></p><ul><li><span>原因: map随着元素数量增多可能重新分配地址, 导致地址变化</span></li></ul></li><li><p><span>迭代顺序不确定, 需要规定顺序时, 必须显示地对key排序</span></p></li></ul></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/29b900569d3a4df4af724686e504fc36~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 15.png"><span> </span><span>*</span><span> Map间不能相互比较, 但是可以和nil比较</span></p><p><strong><span>4.4 结构体</span></strong></p><ul><li><p><span>可以对成员去地址, 然后利用指针访问</span></p></li><li><p><span>结构体成员的输入顺序不同, 就是定义了不同类型的结构体类型</span></p></li><li><p><span>大写字母开头的可导出</span></p></li><li><p><span>结构体不能包含自身类的成员, 但是可以包含自身类指针, 来创建递归的数据结构</span></p></li><li><p><span>结构体传入是拷贝, 需要在函数内修改的话, 得传入指针</span></p><ul><li><span>因此, 构建结构体时可以直接创建指针对象, 方便后面的操作</span></li></ul></li><li><p><span>结构体的比较</span></p><ul><li><p><span>如果全部成员可比, 那结构体就是可比较的</span></p><ul><li><span>=</span><span>= or != , 判断依据是所有成员是否相等</span></li></ul></li></ul></li><li><p><span>结构体嵌入匿名成员, 有点像继承, 但是在初始化声明时, 还是要写全路径</span></p></li></ul><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/109e1491820d458d85a92c05d64fd8d5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 16.png"></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f50f47b194034223820b16e63b29eada~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 17.png"><span> </span><span>*</span><span> 匿名成员更重要的用处是 </span><span>*</span><span>*</span><span>访问这些成员的方法集,</span><span>*</span><span>*</span><span>因此有时候会加入普通类型的匿名成员</span></p><p><strong><span>4.5 JSON</span></strong></p><ul><li><span>结构体tag, 结构体成员必须大写名称</span></li><li><span>从结构体slice =》 json的构成称为 marshaling(编组), Marshal( ) 返回编码后的 </span><span>[</span><span>]</span><span>Byte</span></li><li><span>Encode =》 返回 stream</span></li><li><span>Unmarshal 解码</span></li></ul><p><strong><span>4.6 文本和HTML templates</span></strong></p><ul><li><span>text/template</span></li><li><span>html/template</span></li></ul><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/929f3b8710374c88947fa3d7436a8e28~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 18.png"></p><h2 id='chapter-5-函数'><span>Chapter 5 函数</span></h2><p><strong><span>5.1 函数声明</span></strong></p><ul><li><p><span>函数的类型被称为函数的签名</span></p><ul><li><span>形参相同</span></li><li><span>返回类型相同</span></li></ul></li><li><p><span>形参为拷贝, 但是slice ,map ,function , channel为引用</span></p></li></ul><p><strong><span>5.2 递归</span></strong></p><ul><li><span>Go语言的递归栈大小按需增加, 初始值很小</span></li></ul><p><strong><span>5.3 多返回值</span></strong></p><ul><li><span>Go的垃圾回收机制不包括OS层面的资源, 比如打开的文件、网络连接, 这些需要手动释放</span></li><li><span>直接返回多参数函数调用 , 可以在Debug时在日志里同时打印 数据和错误, 非常方便</span></li><li><span>声明时规定了返回值名称的话, 返回时可以只用 return, 不加对象名 (此特性不要多用, 可读性差)</span></li></ul><p><strong><span>5.4 错误</span></strong></p><ul><li><p><span>大部分函数永远无法保证能否成功运行</span></p></li><li><p><span>Err.Error( )获得错误信息的字符串类型</span></p></li><li><p><span>错误处理策略</span></p><ul><li><p><span>传播错误 (最常用)</span></p><ul><li><span>函数中子程序的失败, 会变成此函数的失败</span></li><li><span>在每次调用其他函数后检测err, 如有错误, 直接返回此err</span></li><li><span>通过fmt.Errorf( ) 来逐层拼接错误, 使得错误信息涵盖从高层到底层</span></li></ul></li></ul></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d356af67e3b342568c00940f27f2985d~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 19.png"><span> </span><span>*</span><span> 避免大写和换行 </span><span>*</span><span> 重试操作 </span><span>*</span><span> 如果问题导致的原因偶然或是不可预知的原因 </span><span>*</span><span> 需要设置重试的间隔或者TTL, 防止无限重试 </span><span>*</span><span> 结束程序 </span><span>*</span><span> 只应该在main( )中执行 </span><span>*</span><span> 只输出错误信息 </span><span>*</span><span> log.Printf( )打印, 不中断程序 </span><span>*</span><span> 忽略错误</span></p><ul><li><p><span>EOF错误</span></p><ul><li><span>读到文件末尾会报错, 但是此类问题不需要处理</span></li></ul></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d554a279e44d4d5ebee07c78c668343e~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 20.png"></p><p><strong><span>5.5 函数值</span></strong></p><ul><li><span>函数类型对象的零值为nil, 调用时会panic</span></li><li><span>函数值间不可比较</span></li><li><span>printf( ) 控制缩进的小技巧</span></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6322d22629eb40eba2a3a2f00aed41c1~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 21.png"><span> </span><strong><span>5.6 匿名函数</span></strong></p><ul><li><span>配合函数值可以在 函数的内部定义函数, 词法环境完整</span></li></ul><p><strong><span>5.7 可变参数</span></strong></p><ul><li><p><span>参数列表加上 …</span></p><ul><li><span>调用者会隐式创建数组, 多个参数转换为slice</span></li></ul></li></ul><p><strong><span>5.8 Defer函数</span></strong></p><ul><li><span>包含defer语句的函数执行完毕之后, 执行defer语句</span></li><li><span>Defer语句可以执行多条, 执行顺序与声明顺序相反</span></li><li><span>Defer用于处理 打开/关闭、连接/断开、加锁/释放锁 等成对的操作</span></li><li><span>匿名函数使用defer可以观察返回值, 尤其是有多个return语句的函数</span></li></ul><p><strong><span>5.9 Panic异常</span></strong></p><ul><li><span>Panic发生时, 先中断程序, 然后执行defer, 随后</span><strong><span>崩溃</span></strong><span>并输出日志</span></li><li><span>调用内置的panic函数也可以引发panic</span></li><li><span>因为会引发崩溃, 所以一般用于严重错误, 大部分错误应该使用错误处理机制</span></li></ul><p><strong><span>5.10 Recover 捕获异常</span></strong></p><ul><li><span>通常不对panic处理</span></li><li><span>在defer函数里调用内置的函数 recover, 会让panic的函数恢复</span></li></ul><h2 id='chapter-6-方法'><span>Chapter 6 方法</span></h2><p><strong><span>6.1 方法声明</span></strong></p><ul><li><span>可以为数值、slice、字符串等类型附加行为</span></li></ul><p><strong><span>6.2 基于指针对象的方法</span></strong></p><ul><li><span>避免拷贝的资源使用, 用指针作为接受者</span></li><li><span>一般约定: 如果有类有一个方法基于指针声明, 那么其他方法也都基于指针声明</span></li><li><span>如果类名是定义的指针的别名, 那么是不允许作为接受器的</span></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/25e4efbd6d0e46b9a54a089632a4085e~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 22.png"></p><ul><li><p><span>Nil也是一个合法的接受器类型</span></p><ul><li><span>定义允许nil作为接受器的方法时, 在注释指出nil代表的含义</span></li></ul></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4509fba34c44f3e9ab6568070bac8dd~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 23.png"></p><p><strong><span>6.3 通过嵌入结构体来拓展类型</span></strong></p><ul><li><span>通过嵌入, 针对字段多的复杂类型, 可以先按字段按小类型分组, 然后定义小类型的方法, 最后组合</span></li><li><span>虽然像继承, 但是注意! 组合不是继承! 组合得到的结构体并不具有多态性质, 要想选择内嵌的某个类的对象, 必须显示地选择它</span></li></ul><p><strong><span>6.4 方法值和表达式</span></strong></p><ul><li><span>可以用一个函数值变量, 用一个方法赋值给它</span></li></ul><p><strong><span>6.5 封装</span></strong></p><ul><li><span>仅有的控制手段: 首字母的大小写</span></li><li><span>这种手段使得语言的最小封装单元为 package</span></li><li><span>getter 一般省略掉Get前缀</span></li><li><span>要考虑好一些不变量的保证</span></li></ul><h2 id='chapter-7-接口'><span>Chapter 7 接口</span></h2><p><strong><span>7.1 接口约定</span></strong></p><ul><li><span>只表现出自己的方法</span></li><li><span>不同的类, 通过实现接口, 可以在某些函数中互相替换</span></li></ul><p><strong><span>7.2 接口类型</span></strong></p><ul><li><span>接口类型具体描述了一系列方法的集合,</span><strong><span>一个实现了这些方法的具体类型是这个接口的实例</span></strong></li><li><span>最广泛的接口: io.Writer, 提供了所有类型写入bytes的抽象</span></li><li><span>有新的接口通过组合已有的接口来定义, 效果类似结构体的内嵌</span></li></ul><p><strong><span>7.3 实现接口的条件</span></strong></p><ul><li><span>每一个具体类型的组基于他们相同的行为可以表示为一个接口类型</span></li></ul><p><strong><span>7.4 flag.Value</span></strong></p><ul><li><span>实现这个接口, 可以创建新的flag选项</span></li></ul><p><strong><span>7.5 接口值</span></strong></p><ul><li><p><span>接口的动态类型和动态值</span></p><ul><li><span>接口的零值, 两部分都是nil</span></li></ul></li><li><p><span>接口值可以比较, 只有都是零值时才相等/ 动态类型相同可比且动态值相等</span></p></li></ul><p><strong><span>7.6 sort.Interface</span></strong></p><ul><li><span>Len() //长度</span></li><li><span>Less(i,j int)bool //两元素的比较</span></li><li><span>Swap(i,j int) //元素的交换</span></li></ul><p><strong><span>7.7 error接口</span></strong></p><ul><li><span>有一个Error() string 方法</span></li></ul><p><strong><span>7.8 类型断言</span></strong></p><ul><li><p><span>检查操作对象的动态类型和断言的类型是否匹配</span></p><ul><li><span>x.(T)</span></li></ul></li><li><p><span>如果操作对象是一个nil接口值, 那么断言必定失败</span></p></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18b26828b5ca461fa56e381126ade66f~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 24.png"><span> </span><strong><span>7.9 类型分支</span></strong></p><ul><li><span>把类型作为switch的分支</span></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cc8f265a7d194f94b841f56365b779a9~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 25.png"></p><p><strong><span>7.10 接口设计</span></strong></p><ul><li><span>不要先创建接口再实现, 不必要的抽象会增加损耗</span></li><li><span>接口只有当有两个或两个以上的具体类型必须以相同方式处理时才需要 / 有依赖冲突时, 通过接口解耦</span></li></ul><h2 id='chapter-8-goroutines'><span>Chapter 8 Goroutines</span></h2><p><strong><span>8.1 Goroutines</span></strong></p><ul><li><span>类比为一个线程</span></li></ul><p><strong><span>8.2 Channels</span></strong></p><ul><li><span>通信机制</span></li><li><span>底层数据结构的引用, 零值为nil</span></li><li><span>仅作为同步的消息事件, 可以使用 struct{} 空结构体</span></li><li><span>串联的channel构成了pipeline</span></li><li><span>用for range处理管道的数据, 当channel被关闭且数据全部被接受之后, 会跳出循环</span></li></ul><p><strong><span>8.3 并发的循环</span></strong></p><p><strong><span>8.4 基于select 的多路复用</span></strong></p><ul><li><p><span>多个case同时就绪时, select会随机的选择一个执行</span></p></li><li><p><span>select中操作nil的channel永远不会被select到</span></p><ul><li><span>于是可以用nil来激活/禁用case</span></li></ul></li></ul><p><strong><span>8.5 并发的退出</span></strong></p><ul><li><span>不能通过发送多个abort信号实现, 因为有的goroutine自己可能已经退出了, abort信号冗余,发送阻塞, 或者goroutine可能又产生其他goroutine导致abort信号不够</span></li><li><span>正确的实现方法是 通过Done channel关闭来</span><strong><span>广播</span></strong><span>信号</span></li></ul><h2 id='chapter-9-基于共享变量的并发'><span>Chapter 9 基于共享变量的并发</span></h2><p><span>类似其他一些语言的并发机制</span></p><p><strong><span>9.1 竞争条件</span></strong></p><ul><li><span>并发安全: 程序在线性&amp;并发条件下都能正确工作</span></li><li><span>文档说是并发安全的, 我们才能并发地去访问它</span></li><li><span>通过加锁的方式, 避免并发访问</span></li><li><span>两个goroutine同时访问同一变量, 并且至少一个是写操作, 就会发生数据竞争</span></li></ul><p><strong><span>9.2 sync.Mutex 互斥锁</span></strong></p><ul><li><span>Lock 和 Unlock 之间被称作临界区</span></li><li><span>尽可能用 defer 将临界区扩展到函数结束</span></li></ul><p><strong><span>9.3 sync.RWMutex 读写锁</span></strong></p><ul><li><span>多读单写</span></li><li><span>大部分为读操作时使用</span></li></ul><p><strong><span>9.4 内存同步</span></strong></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ba0c5ef1088746fbac0c4edff2c592a3~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 29.png"></p><p><strong><span>9.5 sync.Once 惰性初始化</span></strong></p><ul><li><span>把初始化延迟到需要的时候, 减少启动时间</span></li></ul><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5c457d2864cc4202a9768d51ae5c7f4b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 30.png"></p><ul><li><span>对并发的直觉总是不能信任的</span></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/494dccf0cc9e4a738de832e614e053ca~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 31.png"></p><p><strong><span>9.6 竞争条件检测</span></strong></p><ul><li><span>-</span><span>race 的flag</span></li><li><span>只能检测运行时的竞争, 需要良好的测试数据</span></li></ul><p><strong><span>9.7 goroutines 和 线程</span></strong></p><ul><li><p><span>动态栈</span></p><ul><li><span>goroutine的栈大小动态伸缩</span></li></ul></li><li><p><span>Goroutine调度</span></p><ul><li><span>操作系统的线程调度有保存、恢复、更新调度器几步组成, 速度很慢</span></li><li><span>Go运行时包含了自己的调度器, 不需要进入内核的上下文, 代价比线程低得多</span></li></ul></li><li><p><span>Groutine 没有id号</span></p></li></ul><h2 id='chapter-10-包和工具'><span>Chapter 10 包和工具</span></h2><p><strong><span>10.1 包简介</span></strong></p><p><strong><span>10.2 导入路径</span></strong></p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02613ca69e0b4877bbc9c4605f8a0a29~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 32.png"></p><p><strong><span>10.3 包声明</span></strong></p><ul><li><span>以</span><span>_</span><span>test为后缀的包名由go test命令独立编译, 普通包与测试包相互独立</span></li></ul><p><strong><span>10.4 包导入</span></strong></p><ul><li><span>导入的包之间通过空行来分组</span></li><li><span>有重名包时, 至少为一个包定义新的包名(重命名)</span></li></ul><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cdea85aeb90e4f1882cd81becb764361~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 33.png"><span> </span><strong><span>10.5 匿名导入</span></strong></p><ul><li><span>只利用包的init初始化函数</span></li><li><span>下划线</span></li></ul><p><strong><span>10.6 包和命名</span></strong></p><ul><li><span>包里最重要的成员往往简单明了</span></li></ul><h2 id='chapter-11-测试'><span>Chapter 11 测试</span></h2><p><strong><span>11.1 go test</span></strong></p><ul><li><p><span>*</span><span>_</span><span>test.go</span></p><ul><li><span>测试函数 Testxxx</span></li><li><span>基准函数 Benchmarkxxxx</span></li><li><span>示例函数 Examplexxxx</span></li></ul></li></ul><p><strong><span>11.2 测试函数</span></strong></p><ul><li><span>导入testing包, 签名为</span></li></ul><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f03d74b51bc946d1a00f98b455cfc822~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 34.png"><span> t参数用于报告测试失败和附加的日志信息</span></p><p><strong><span>11.3 测试覆盖率</span></strong></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f7801c9441d74541886d838c9f62544e~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 35.png"></p><p><strong><span>11.4 基准测试</span></strong></p><ul><li><span>Benchmarkxxx, 参数为</span><span>*</span><span>testing.B 类型</span></li><li><span>用于测试程序在固定工作下负载下的性能</span></li></ul><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5720622c01e459b9e5b9390c610be45~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 36.png"></p><p><strong><span>11.5 示例函数</span></strong></p><h2 id='chapter-12-反射'><span>Chapter 12 反射</span></h2><p><span>在运行时更新变量和检查变量的值、调用方法和内在操作</span></p><p><strong><span>12.1 为何需要反射</span></strong></p><ul><li><span>有时候编写的函数不知道具体类型, 比如Fprintf( )</span></li><li><span>需要使用反射, 来检查未知类型的表示方式</span></li></ul><p><strong><span>12.2 reflect.Type &amp; reflect.Value</span></strong></p><ul><li><p><span>reflect包提供反射</span></p><ul><li><span>定义了Type 和 Value类型</span></li></ul></li></ul><p><strong><span>12.3 通过reflect.Value 修改变量值</span></strong></p><ul><li><span>只有变量才可以取地址</span></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/22dcbb0ad9c44758824f02002f10b880~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 37.png"><span> </span><span>*</span><span> 调用Elem( ) 方法</span></p><ul><li><span>对得到的变量调用Addr( ) 方法获取地址, 再调用Interface( )方法获得interface{}类型的接口, 其中包含指针</span></li><li><span>可以读取未导出成员, 但不可以修改</span></li></ul><p><strong><span>12.4 获取结构体tag</span></strong></p><ul><li><span>reflect.Type.Field( )返回了对象每个成员的名字、类型、可选成员标签等信息</span></li></ul><p><strong><span>12.5 获得方法集</span></strong></p><ul><li><span>reflect.Type.Method()</span></li></ul><p><strong><span>12.6 ADVICES</span></strong></p><ul><li><span>基于反射的代码很脆弱, 应该把反射相关的使用控制在包的内部, 尽可能避免在API中暴露reflect.Value类型来限制非法输入</span></li><li><span>大量反射的代码可读性太差了</span></li><li><span>基于反射的代码很慢</span></li></ul><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b6a19bf159144ada948bdc9913642e31~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 38.png"></p><h2 id='chapter-13-unsafe'><span>Chapter 13 unsafe</span></h2><p><strong><span>13.1 unsafe.Sizeof,Alignof &amp; Offserof</span></strong></p><ul><li><span>Sizeof 返回操作数在内存中的字节大小, 参数可以为任意类型的表达式, 但不会求值</span></li></ul><p><strong><span>13.2 unsafe.Pointer</span></strong></p><ul><li><span>可以包含任意类型变量地址的指针类型, 可以与普通指针互相转换</span></li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/832122fedfdb40f093125600368dded7~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="Pasted Graphic 39.png"></p><p><img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/00ba359ecd0075e59ffbc3d810af551d.svg" referrerpolicy="no-referrer"><span> 赞</span></p><p><img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/3d482c7a948bac826e155953b2a28a9e.svg" referrerpolicy="no-referrer"><span> 收藏</span></p></div></div>
+</body>
+</html>

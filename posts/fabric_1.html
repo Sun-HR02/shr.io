@@ -1,0 +1,1253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+
+
+/* CSS Document */
+:root {
+    --code-background: #282a36;
+    --code-current-line: #44475a;
+    --code-section: #44475a;
+    --code-foreground: #f8f8f2;
+    --code-comment: #6272a4;
+    --code-cyan: #8be9fd;
+    --code-green: #50fa7b;
+    --code-orange: #ffb86c;
+    --code-pink: #ff79c6;
+    --code-purple: #bd93f9;
+    --code-red: #ff5555;
+    --code-yellow: #f1fa8c;
+    --code-math: #151320;
+}
+
+/** code highlight */
+
+.cm-s-inner .cm-variable {
+    color: var(--code-green)
+}
+
+.cm-s-inner .cm-operator {
+    color: var(--code-pink)
+}
+
+.cm-s-inner .cm-property {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-keyword {
+    color: var(--code-pink);
+}
+
+.cm-s-inner .cm-tag {
+    color: var(--code-pink);
+}
+
+.cm-s-inner .cm-attribute {
+    color: var(--code-green);
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--code-foreground);
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string,
+.cm-s-inner .cm-string-2 {
+    color: var(--code-yellow);
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: var(--code-comment);
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner.cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-def {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-builtin {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-bracket {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-number {
+    color: var(--code-purple);
+}
+
+.cm-s-inner .cm-variable {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: var(--code-cyan);
+    font-style: italic;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: var(--code-current-line);
+    color: #fff !important;
+    text-shadow: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('file:///Users/keepcup/Library/Application%20Support/abnerworks.Typora/themes/');
+:root {
+  --bg-color: #FFF;
+  --text-color: #222;
+  --meta-content-color: #06B;
+  --primary-color: #24D;
+  --active-file-bg-color: rgba(51, 51, 51, 0.05);
+  --active-file-border-color: #24D;
+  --side-bar-bg-color: #EEE;
+  --item-hover-bg-color: rgba(127, 127, 127, 0.1);
+  --item-hover-text-color: inherit;
+  --monospace: 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', monospace;
+}
+html,
+body,
+#write {
+  background: #FFF;
+  font: 400 1rem/1.75 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+#write,
+.markdown-section {
+  max-width: 40em;
+  padding-left: 2em;
+  padding-right: 2em;
+  /* ============================== 代码 引用 ==============================*/
+}
+#write *,
+.markdown-section *,
+#write *::before,
+.markdown-section *::before,
+#write *::after,
+.markdown-section *::after {
+  word-break: normal;
+  box-sizing: border-box;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#write h1,
+.markdown-section h1,
+#write h1 *,
+.markdown-section h1 *,
+#write h2,
+.markdown-section h2,
+#write h2 *,
+.markdown-section h2 *,
+#write h3,
+.markdown-section h3,
+#write h3 *,
+.markdown-section h3 *,
+#write h4,
+.markdown-section h4,
+#write h4 *,
+.markdown-section h4 *,
+#write h5,
+.markdown-section h5,
+#write h5 *,
+.markdown-section h5 *,
+#write h6,
+.markdown-section h6,
+#write h6 *,
+.markdown-section h6 * {
+  color: #24D;
+  font-family: 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  font-weight: normal;
+  padding: 0 !important;
+  margin: 1em 0 0 !important;
+  line-height: 1.25 !important;
+}
+#write h1::before,
+.markdown-section h1::before,
+#write h1 *::before,
+.markdown-section h1 *::before,
+#write h2::before,
+.markdown-section h2::before,
+#write h2 *::before,
+.markdown-section h2 *::before,
+#write h3::before,
+.markdown-section h3::before,
+#write h3 *::before,
+.markdown-section h3 *::before,
+#write h4::before,
+.markdown-section h4::before,
+#write h4 *::before,
+.markdown-section h4 *::before,
+#write h5::before,
+.markdown-section h5::before,
+#write h5 *::before,
+.markdown-section h5 *::before,
+#write h6::before,
+.markdown-section h6::before,
+#write h6 *::before,
+.markdown-section h6 *::before {
+  font: 400 0.8em 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  color: inherit;
+  margin-right: 0.5rem;
+  border: none;
+  position: relative;
+  left: unset;
+  top: unset;
+  float: none;
+  padding: 0;
+  vertical-align: baseline;
+  opacity: 1 !important;
+}
+#write h1.md-focus:after,
+.markdown-section h1.md-focus:after,
+#write h1 *.md-focus:after,
+.markdown-section h1 *.md-focus:after,
+#write h2.md-focus:after,
+.markdown-section h2.md-focus:after,
+#write h2 *.md-focus:after,
+.markdown-section h2 *.md-focus:after,
+#write h3.md-focus:after,
+.markdown-section h3.md-focus:after,
+#write h3 *.md-focus:after,
+.markdown-section h3 *.md-focus:after,
+#write h4.md-focus:after,
+.markdown-section h4.md-focus:after,
+#write h4 *.md-focus:after,
+.markdown-section h4 *.md-focus:after,
+#write h5.md-focus:after,
+.markdown-section h5.md-focus:after,
+#write h5 *.md-focus:after,
+.markdown-section h5 *.md-focus:after,
+#write h6.md-focus:after,
+.markdown-section h6.md-focus:after,
+#write h6 *.md-focus:after,
+.markdown-section h6 *.md-focus:after {
+  color: #BBB;
+  font-size: 0.8em;
+}
+#write h1:first-child,
+.markdown-section h1:first-child {
+  padding-top: 3em !important;
+}
+#write h1 *,
+.markdown-section h1 * {
+  font: 2rem 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+}
+#write h2,
+.markdown-section h2 {
+  border: none;
+  border-top: 1px solid #24D;
+  padding-top: 1em !important;
+  margin-top: 2em !important;
+  display: block;
+}
+#write h2,
+.markdown-section h2,
+#write h2 *,
+.markdown-section h2 * {
+  font-size: 1.75rem;
+}
+#write h3,
+.markdown-section h3,
+#write h3 *,
+.markdown-section h3 * {
+  font-size: 1.5rem;
+}
+#write h4,
+.markdown-section h4,
+#write h4 *,
+.markdown-section h4 * {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+#write h5,
+.markdown-section h5,
+#write h5 *,
+.markdown-section h5 * {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+#write h6,
+.markdown-section h6,
+#write h6 *,
+.markdown-section h6 * {
+  font-size: 1rem;
+  font-weight: 700;
+}
+#write h1,
+.markdown-section h1 {
+  counter-reset: h2;
+}
+#write h2,
+.markdown-section h2 {
+  counter-reset: h3;
+}
+#write h3,
+.markdown-section h3 {
+  counter-reset: h4;
+}
+#write h4,
+.markdown-section h4 {
+  counter-reset: h5;
+}
+#write h5,
+.markdown-section h5 {
+  counter-reset: h6;
+}
+#write h2::before,
+.markdown-section h2::before {
+  counter-increment: h2;
+  content: counter(h2) ".";
+}
+#write h3::before,
+.markdown-section h3::before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3);
+}
+#write h4::before,
+.markdown-section h4::before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4);
+}
+#write h5::before,
+.markdown-section h5::before {
+  counter-increment: h5;
+  content: none;
+}
+#write h6::before,
+.markdown-section h6::before {
+  counter-increment: h6;
+  content: none;
+}
+#write h2.md-focus::after,
+.markdown-section h2.md-focus::after {
+  content: ' H2';
+}
+#write h3.md-focus::after,
+.markdown-section h3.md-focus::after {
+  content: ' H3';
+}
+#write h4.md-focus::after,
+.markdown-section h4.md-focus::after {
+  content: ' H4';
+}
+#write h5.md-focus::after,
+.markdown-section h5.md-focus::after {
+  content: ' H5';
+}
+#write h6.md-focus::after,
+.markdown-section h6.md-focus::after {
+  content: ' H6';
+}
+#write p,
+.markdown-section p,
+#write pre.md-fences,
+.markdown-section pre.md-fences,
+#write pre[data-lang],
+.markdown-section pre[data-lang],
+#write blockquote,
+.markdown-section blockquote,
+#write table:not(.md-grid-board),
+.markdown-section table:not(.md-grid-board),
+#write ul,
+.markdown-section ul,
+#write ol,
+.markdown-section ol,
+#write hr,
+.markdown-section hr {
+  margin: 1rem 0;
+}
+#write hr,
+.markdown-section hr {
+  height: 0;
+  border: none;
+  border-bottom: 1px dotted #24D;
+}
+#write .inline-with-bg,
+.markdown-section .inline-with-bg {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+}
+#write del,
+.markdown-section del,
+#write q,
+.markdown-section q,
+#write mark,
+.markdown-section mark {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+}
+#write strong,
+.markdown-section strong,
+#write b,
+.markdown-section b,
+#write em,
+.markdown-section em {
+  margin: 0 0.1rem;
+}
+#write u,
+.markdown-section u {
+  margin: 0 0.1rem;
+}
+#write u strong,
+.markdown-section u strong,
+#write u b,
+.markdown-section u b,
+#write u em,
+.markdown-section u em {
+  margin: 0;
+}
+#write p a,
+.markdown-section p a,
+#write table a,
+.markdown-section table a,
+#write li a,
+.markdown-section li a {
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+  color: #93F;
+  padding: 0;
+  transition: 1s;
+}
+#write a:hover,
+.markdown-section a:hover {
+  color: #F30;
+  background: #FF4;
+  text-decoration-color: red;
+  transition: 0.3s;
+}
+#write a.anchor,
+.markdown-section a.anchor {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+#write a.anchor:hover,
+.markdown-section a.anchor:hover {
+  background: #FF4;
+}
+#write del,
+.markdown-section del {
+  color: rgba(34, 34, 34, 0.5);
+  background: #EEE;
+}
+#write u,
+.markdown-section u {
+  text-decoration-color: #F30;
+}
+#write mark,
+.markdown-section mark {
+  color: #F30;
+  background: #FF4;
+}
+#write mark u,
+.markdown-section mark u {
+  text-decoration: none;
+  border-bottom: 1.5px solid #F30;
+  background: #FF4;
+}
+#write em,
+.markdown-section em {
+  color: #F69;
+}
+#write q,
+.markdown-section q {
+  font-size: 0.9em;
+  background: #EEE;
+  opacity: 0.5;
+}
+#write q::before,
+.markdown-section q::before,
+#write q::after,
+.markdown-section q::after {
+  content: '';
+}
+#write q:hover,
+.markdown-section q:hover {
+  opacity: 1;
+}
+#write .md-linebreak-mark,
+.markdown-section .md-linebreak-mark,
+#write .md-raw-html-src-content,
+.markdown-section .md-raw-html-src-content,
+#write .md-raw-inline,
+.markdown-section .md-raw-inline,
+#write .md-tag,
+.markdown-section .md-tag,
+#write [md-inline=linebreak],
+.markdown-section [md-inline=linebreak] {
+  opacity: 1;
+  padding: 0 0.3rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25em;
+  background: #EEE;
+  color: inherit;
+}
+#write ruby > rt,
+.markdown-section ruby > rt {
+  font-size: clamp(10px, 0.5em, 99em) !important;
+}
+#write code,
+.markdown-section code,
+#write kbd,
+.markdown-section kbd,
+#write code:not([class*="lang-"]):not([class*="language-"]),
+.markdown-section code:not([class*="lang-"]):not([class*="language-"]) {
+  color: #AE2;
+  background: #333;
+  border: 0px solid transparent;
+  border-radius: 0.25em;
+  padding: 0.1em 0.3rem;
+  margin: 0 0.1rem;
+  font: bold 0.9em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+  white-space: pre-wrap;
+  min-width: auto;
+}
+#write .code_block,
+.markdown-section .code_block {
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write pre[data-lang],
+.markdown-section pre[data-lang] {
+  border-radius: 0;
+  background: none;
+}
+#write pre[data-lang] code,
+.markdown-section pre[data-lang] code {
+  margin: 0;
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write pre[data-lang]::after,
+.markdown-section pre[data-lang]::after {
+  color: #FFF;
+  top: 0;
+  right: 1em;
+  background: #FFF2;
+  padding: 0.2em 0.8em;
+  border-radius: 0 0 0.5em 0.5em;
+}
+#write pre.md-fences,
+.markdown-section pre.md-fences {
+  background: #333;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  word-break: break-word;
+  white-space: break-spaces;
+}
+#write .code-tooltip,
+.markdown-section .code-tooltip {
+  box-shadow: none;
+  border-radius: 0.5em;
+  border: 0px solid transparent;
+}
+#write kbd,
+.markdown-section kbd {
+  box-shadow: none;
+}
+#write kbd + kbd,
+.markdown-section kbd + kbd {
+  margin: 0 0.1rem;
+}
+#write blockquote,
+.markdown-section blockquote {
+  padding: 0.75rem 0.75rem;
+  border-left: 4px solid #CCC;
+  background: rgba(238, 238, 238, 0.5);
+  color: rgba(34, 34, 34, 0.75);
+  border-radius: 0 0.5em 0.5em 0;
+  transition: 1s;
+}
+#write blockquote p,
+.markdown-section blockquote p {
+  font: 0.9em/1.5 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+  margin: 0.75rem 0;
+}
+#write blockquote p:first-child,
+.markdown-section blockquote p:first-child {
+  margin-top: 0;
+}
+#write blockquote p:last-child,
+.markdown-section blockquote p:last-child {
+  margin-bottom: 0;
+}
+#write blockquote:hover,
+.markdown-section blockquote:hover {
+  transition: 0.2s;
+  border-left: 4px solid #24D;
+  background: #EEE;
+  color: #222;
+}
+#write .md-image,
+.markdown-section .md-image,
+#write img,
+.markdown-section img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 2px #0000;
+  transition: all 0.3s !important;
+}
+#write .md-image:hover,
+.markdown-section .md-image:hover,
+#write img:hover,
+.markdown-section img:hover {
+  box-shadow: 0 0 2px #0004;
+}
+#write .md-image + .md-softbreak,
+.markdown-section .md-image + .md-softbreak {
+  height: 1em;
+}
+#write ul,
+.markdown-section ul,
+#write ol,
+.markdown-section ol {
+  margin: 0.5em 0;
+  padding-left: 3ch;
+}
+#write ul li,
+.markdown-section ul li,
+#write ol li,
+.markdown-section ol li {
+  margin: 0.5em 0;
+}
+#write ul ul,
+.markdown-section ul ul,
+#write ol ul,
+.markdown-section ol ul,
+#write ul ol,
+.markdown-section ul ol,
+#write ol ol,
+.markdown-section ol ol {
+  margin: 0.3em 0;
+}
+#write ul ul li,
+.markdown-section ul ul li,
+#write ol ul li,
+.markdown-section ol ul li,
+#write ul ol li,
+.markdown-section ul ol li,
+#write ol ol li,
+.markdown-section ol ol li {
+  margin: 0.3em 0;
+}
+#write li p,
+.markdown-section li p {
+  margin: 0;
+}
+#write ol li::marker,
+.markdown-section ol li::marker {
+  font: 0.9em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+}
+#write .task-list-item,
+.markdown-section .task-list-item {
+  margin-left: 0 !important;
+  position: relative;
+}
+#write .task-list-item input[type="checkbox"],
+.markdown-section .task-list-item input[type="checkbox"] {
+  width: 1.5em !important;
+  margin: 0;
+  position: absolute;
+  left: -1.5em;
+  top: 0.5em;
+}
+#write table:not(.md-grid-board),
+.markdown-section table:not(.md-grid-board),
+#write .md-table,
+.markdown-section .md-table {
+  display: table;
+  width: auto;
+  border-radius: 0.5em;
+  overflow: hidden;
+  font: 0.9rem/1.75 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+  border-collapse: separate;
+  border: 1px solid #CCC;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th,
+#write table:not(.md-grid-board) td,
+.markdown-section table:not(.md-grid-board) td,
+#write .md-table td,
+.markdown-section .md-table td {
+  padding: 0.5em clamp(0.5em, 1vw, 2em);
+  vertical-align: top;
+  border: none;
+}
+#write table:not(.md-grid-board) th:not(:last-child),
+.markdown-section table:not(.md-grid-board) th:not(:last-child),
+#write .md-table th:not(:last-child),
+.markdown-section .md-table th:not(:last-child),
+#write table:not(.md-grid-board) td:not(:last-child),
+.markdown-section table:not(.md-grid-board) td:not(:last-child),
+#write .md-table td:not(:last-child),
+.markdown-section .md-table td:not(:last-child) {
+  border-right: 1px dashed #8888;
+}
+#write table:not(.md-grid-board) tr:last-child td,
+.markdown-section table:not(.md-grid-board) tr:last-child td,
+#write .md-table tr:last-child td,
+.markdown-section .md-table tr:last-child td {
+  border-bottom: none;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th {
+  line-height: 1.5em;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th,
+#write table:not(.md-grid-board) td,
+.markdown-section table:not(.md-grid-board) td,
+#write .md-table td,
+.markdown-section .md-table td {
+  border-bottom: 1px solid #CCC;
+}
+#write table:not(.md-grid-board) th,
+.markdown-section table:not(.md-grid-board) th,
+#write .md-table th,
+.markdown-section .md-table th {
+  background: #EEE;
+}
+#write table:not(.md-grid-board) tbody tr:nth-child(even),
+.markdown-section table:not(.md-grid-board) tbody tr:nth-child(even),
+#write .md-table tbody tr:nth-child(even),
+.markdown-section .md-table tbody tr:nth-child(even) {
+  background: rgba(238, 238, 238, 0.25);
+}
+#write table:not(.md-grid-board) tbody tr:nth-child(odd),
+.markdown-section table:not(.md-grid-board) tbody tr:nth-child(odd),
+#write .md-table tbody tr:nth-child(odd),
+.markdown-section .md-table tbody tr:nth-child(odd) {
+  background: none;
+}
+#write .table_light,
+.markdown-section .table_light {
+  border: 1px solid #CCC;
+}
+#write .table_light th,
+.markdown-section .table_light th,
+#write .table_light td,
+.markdown-section .table_light td {
+  border-bottom: 1px solid #CCC;
+}
+#write .table_light th,
+.markdown-section .table_light th {
+  background: #EEE;
+}
+#write .table_light tbody tr:nth-child(even),
+.markdown-section .table_light tbody tr:nth-child(even) {
+  background: rgba(238, 238, 238, 0.25);
+}
+#write .table_light tbody tr:nth-child(odd),
+.markdown-section .table_light tbody tr:nth-child(odd) {
+  background: none;
+}
+#write .table_dark th,
+.markdown-section .table_dark th,
+#write .table_dark td,
+.markdown-section .table_dark td {
+  color: white;
+}
+#write .table_dark th,
+.markdown-section .table_dark th {
+  background: #333;
+  color: #F69;
+}
+#write .table_dark tbody tr:nth-child(even),
+.markdown-section .table_dark tbody tr:nth-child(even) {
+  background: #595959;
+}
+#write .table_dark tbody tr:nth-child(odd),
+.markdown-section .table_dark tbody tr:nth-child(odd) {
+  background: #666666;
+}
+#write .md-def-name,
+.markdown-section .md-def-name {
+  color: #888;
+}
+#write .md-def-name::before,
+.markdown-section .md-def-name::before,
+#write .md-def-name::after,
+.markdown-section .md-def-name::after {
+  color: #888;
+}
+#write .md-fences[lang="mermaid"]:not(.md-focus),
+.markdown-section .md-fences[lang="mermaid"]:not(.md-focus),
+#write .md-diagram-panel,
+.markdown-section .md-diagram-panel,
+#write .mermaid,
+.markdown-section .mermaid {
+  background: #FFF;
+}
+#write .md-fences[lang="mermaid"]:not(.md-focus) *,
+.markdown-section .md-fences[lang="mermaid"]:not(.md-focus) *,
+#write .md-diagram-panel *,
+.markdown-section .md-diagram-panel *,
+#write .mermaid *,
+.markdown-section .mermaid * {
+  font-family: 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif !important;
+}
+#write pre.md-fences-advanced.md-focus[lang="mermaid"],
+.markdown-section pre.md-fences-advanced.md-focus[lang="mermaid"] {
+  margin-bottom: 1em !important;
+}
+#write pre.md-fences-advanced.md-focus .md-fences-adv-panel,
+.markdown-section pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  position: relative;
+  background: #FFF;
+  border-radius: 0 0 0.5em 0.5em;
+  margin: 0.75em -1em -0.75em;
+  width: calc(100% +  1em*2);
+  border: 1px solid #333;
+}
+#write .mermaid,
+.markdown-section .mermaid {
+  display: flex;
+  justify-content: center;
+}
+#write .mermaid .messageText,
+.markdown-section .mermaid .messageText {
+  stroke: none !important;
+}
+table .md-br,
+table .md-br-content {
+  font-size: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container)::before,
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container)::after {
+  color: #C8C8C8 !important;
+  color: var(--blur-text-color) !important;
+}
+#outline-content {
+  padding: 0 0.5em;
+  font: 400 0.8em 'JetBrains Mono', Menlo, Consolas, 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', monospace;
+}
+#outline-content li ul {
+  padding-left: 2ch;
+}
+#outline-content li .outline-item {
+  padding: 0.5em 0.5em !important;
+  margin: 0;
+  border: none;
+  border-radius: 0.25em;
+}
+#outline-content li .outline-item .outline-expander {
+  padding-right: 1ch;
+}
+#outline-content li .outline-item .outline-label {
+  font: 1.25em 'Poppins', 'Source Han Sans HC', 'PingFang', 'Microsoft YaHei', sans-serif;
+}
+#outline-content li .outline-item .outline-label:hover {
+  text-decoration: none;
+}
+#outline-content li .outline-item::before {
+  display: inline-block;
+  flex: none;
+  padding: 0.3em 0.25em;
+  position: absolute;
+  text-align: right;
+  opacity: 0;
+  transition: all 3s;
+}
+#outline-content li .outline-item::before:hover {
+  color: #FFF;
+  background: red;
+  border-radius: 0.25em;
+  z-index: 99;
+}
+#outline-content li .outline-item:hover::before,
+#outline-content li .outline-item .outline-active::before {
+  opacity: 0.75;
+  transition: all 0s;
+}
+#outline-content li .outline-item:hover {
+  background-color: inherit;
+}
+#outline-content li .outline-item .outline-active {
+  color: #24D;
+  font-weight: bold !important;
+}
+#outline-content .outline-h1 {
+  counter-reset: h2;
+  overflow: hidden;
+}
+#outline-content .outline-h1 > ul {
+  padding-left: 2.5ch;
+}
+#outline-content .outline-h2 {
+  padding: 2px 0;
+  counter-reset: h3;
+  counter-increment: h2;
+}
+#outline-content .outline-h2::before {
+  content: '';
+  display: block;
+  height: 0px;
+  width: 200%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  border-top: 0.5px solid #0001;
+}
+#outline-content .outline-h2 > .outline-item::before {
+  content: counter(h2);
+  min-width: 2ch;
+  left: -2ch;
+  opacity: 0.75;
+}
+#outline-content .outline-h3 {
+  counter-reset: h4;
+  counter-increment: h3;
+}
+#outline-content .outline-h3 > .outline-item::before {
+  content: counter(h2) "." counter(h3);
+  min-width: 4ch;
+  left: -4ch;
+}
+#outline-content .outline-h4 {
+  counter-reset: h5;
+  counter-increment: h4;
+}
+#outline-content .outline-h4 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4);
+  min-width: 6ch;
+  left: -6ch;
+}
+#outline-content .outline-h5 {
+  counter-reset: h6;
+  counter-increment: h5;
+}
+#outline-content .outline-h5 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5);
+  min-width: 8ch;
+  left: -8ch;
+}
+#outline-content .outline-h6 {
+  counter-increment: h6;
+}
+#outline-content .outline-h6 > .outline-item::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6);
+  min-width: 10ch;
+  left: -10ch;
+}
+.sidebar > h1 .app-name-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar > h1 .app-name-link img {
+  max-height: 3em;
+}
+.sidebar-nav {
+  margin: 0;
+}
+.sidebar-nav > a {
+  line-height: 1.25em;
+}
+.sidebar-nav > a strong {
+  font-weight: normal;
+}
+.sidebar-nav.active {
+  position: relative;
+}
+.sidebar-nav.active:before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: -50%;
+  background: #ffffff;
+  z-index: -1;
+}
+.sidebar-nav.active > a {
+  border-color: #24D;
+  color: #24D;
+}
+.sidebar-nav.active > a strong {
+  font-weight: bold;
+  color: #24D;
+}
+.markdown-section {
+  padding: env(safe-area-inset-top) calc(2em + env(safe-area-inset-left) + env(safe-area-inset-right) + 1vw) env(safe-area-inset-bottom);
+}
+.sidebar-toggle .sidebar-toggle-button {
+  zoom: 0.8;
+  opacity: 0.5;
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>一文上手当前热门区块链！ Hyperledger Fabric 区块链实践教学</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><blockquote><p><span>阅读完本文，你将可以：</span></p><p><span>至少部署三个节点构建完成FABRIC区块链</span></p><p><span>通过GO语言开发，实现自定义的数据提交到链，并能查询交易的数据</span></p></blockquote><p><span>如果本文对你有用，麻烦请给我点个赞👍，这是对我很大的鼓励！</span></p><h2 id='大致简介'><span>大致简介</span></h2><p><span>文章有三个部分</span></p><ul><li><span>第一个部分是搭建Fabric节点网络；</span></li><li><span>第二部分是学习使用GO语言开发链码；</span></li><li><span>第三部分是学习在区块链网络上部署链码。</span></li></ul><h2 id='自身理解'><span>自身理解</span></h2><ul><li><span>Fabric使用test-network和docker-compose技术来搭建，比较方便</span></li><li><span>Go语言链码开发，需要仔细阅读开发文档，弄清楚链码接口的实现。</span></li><li><span>test-network部署链码比较方便。</span></li></ul><h2 id='技术路线'><span>技术路线</span></h2><ul><li><span>Docker</span></li></ul><blockquote><p><span>Docker是一种虚拟化容器技术，可以创建轻量级容器，将应用包及其依赖打包发布</span></p></blockquote><ul><li><span>Fabric</span></li></ul><blockquote><p><span>Hyperledger Fabric是IBM推出的一种新型联盟链，其不以算力竞争来产生新区块。</span></p></blockquote><ul><li><span>Golang</span></li></ul><blockquote><p><span>Golang是Google推出的新兴的编程语言</span></p></blockquote><h2 id='系统平台'><span>系统平台</span></h2><ul><li><span>Linux系统版本：Ubuntu 20.04 64位</span></li><li><span>Docker版本: Docker version 20.10.12, build 20.10.12-0ubuntu2~20.04.1</span></li><li><span>Go语言版本: go1.18.2 linux/arm64</span></li><li><span>GoLand版本：2021.2.4</span></li></ul><h2 id='实现过程'><span>实现过程</span></h2><h3 id='fabric网络搭建'><span>Fabric网络搭建</span></h3><h4 id='安装docker和docker-compose'><span>安装docker和docker-compose</span></h4><p><span>  apt update</span><br/><span>  apt install docker.io -y</span><br/><span>  apt install docker-compose -y</span><br/><span> 复制代码</span></p><h4 id='确认go版本'><span>确认Go版本</span></h4><p><span>如果有旧版本的go，先卸载</span></p><p><span>安装1.18版本的golang</span></p><p><span>  wget </span><a href='https://go.dev/dl/go1.18.2.linux-amd64.tar.gz' target='_blank' class='url'>https://go.dev/dl/go1.18.2.linux-amd64.tar.gz</a><span></span><br/><span>  tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz</span><br/><span>  vim /etc/profile  </span></p><h1 id='在文件里添加下面这一行如果没有）'><span>在文件里添加下面这一行（如果没有）  </span></h1><p><span>  export PATH=$PATH:/usr/local/go/bin</span><br/><span>  </span><br/><span>  source /etc/profile</span><br/><span> 复制代码</span></p><h4 id='fabric的下载'><span>Fabric的下载</span></h4><p><span>由于国内云服务器访问github不稳定，所以从镜像源hub.fastgit.xyz拉取项目</span></p><p><code>git clone https://hub.fastgit.xyz/hyperledger/fabric.git</code></p><p><span>拉取完之后，本地出现fabric项目</span></p><h4 id='fabric-samples的拉取'><span>Fabric-samples的拉取</span></h4><p><span>在 fabric/scripts下有一脚本bootstrap.sh,用于下载fabric-samples测试样例</span></p><ul><li><span>因为脚本当中还是从GitHub拉取项目，所以依然需要改为镜像源</span></li><li><span>一共有三处，不能改少了</span></li><li><span>除了拉取项目以外，这个脚本还会下载测试网络需要的docker images</span></li></ul><p><span>编辑脚本</span><code>vim bootstrap.sh</code></p><p><span>把所以github.com都改成hub.fastgit.xyz</span></p><p><span>保存退出文件之后，</span><code>. bootstrap.sh</code><span> 执行脚本，下载fabric-samples</span></p><h4 id='test-network的基本操作'><span>test-network的基本操作</span></h4><ol start='' ><li><span>进入fabric-samples/test-network 目录</span></li><li><span>使用</span><code>./network.sh up</code><span>启动网络</span></li></ol><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9f7de31e0a64527b9aaacc085123da4~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image.png"></p><p><span> 看到三个节点容器，网络搭建起来了</span><br/><span> 复制代码</span></p><ol start='3' ><li><span>使用</span><code>./network.sh down</code><span>关闭网络</span></li><li><span>在启动指令后加</span><code>createChannel</code><span>参数, 创建一个通道，默认名称为mychannel,名称全小写</span></li><li><span>在启动指令后加上</span><code>-ca</code><span>标签, 使用ca认证方式启动网络, 使用</span><code>docker ps</code><span>查看,发现多了几个ca相关容器</span></li><li><span>在启动指令后加上</span><code>-s couchdb</code><span>参数, 将数据库设为CouchDB</span></li></ol><h3 id='go语言链码编写'><span>Go语言链码编写</span></h3><ul><li><p><span>要点</span></p><ul><li><span>导入shim和peer包</span></li><li><span>写一个空结构体作为资产</span></li><li><span>编写Init和Invoke方法</span></li><li><span>写实际需要调用的服务</span></li></ul></li></ul><p><span>先导入依赖</span></p><p><span>  go get -u github.com/hyperledger/fabric-chaincode-go/shim</span><br/><span>  go get -u github.com/hyperledger/fabric-protos-go/peer</span><br/><span> 复制代码</span></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d155fff9aeea4ae89a39ad7797f1880b~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image.png"></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23f1ed6c94a346c69d61ee9162343de5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image.png"></p><p><span>在main.go里写入下面的内容</span></p><p><span>  package main</span><br/><span>  </span><br/><span>  import (</span><br/><span>    &quot;fmt&quot;</span><br/><span>    &quot;github.com/hyperledger/fabric-chaincode-go/shim&quot;</span><br/><span>    &quot;github.com/hyperledger/fabric-protos-go/peer&quot;</span><br/><span>  )</span><br/><span>  </span><br/><span>  type Asset struct {</span><br/><span>    // 资产定义</span><br/><span>    // 空结构体，后面使用</span><br/><span>  }</span><br/><span>  </span><br/><span>  //Init 是初始化方法，是必须要实现的</span><br/><span>  func (a *Asset) Init(stub shim.ChaincodeStubInterface) peer.Response {</span><br/><span>    // args用字符串切片来存储参数</span><br/><span>    args := stub.GetStringArgs()</span><br/><span>    // 参数是键值对，切片长度为2</span><br/><span>    if len(args)!=2 {</span><br/><span>      return  shim.Error(&quot;参数错误 .... &quot;)</span><br/><span>    }</span><br/><span>    err := stub.PutState(args[0],[]byte(args[1])) //把键值对传入fabric数据库</span><br/><span>    if err!=nil {</span><br/><span>      return shim.Error(&quot;创建资产失败: &quot;+args[0])</span><br/><span>    }</span><br/><span>    return shim.Success(nil)</span><br/><span>  }</span><br/><span>  </span><br/><span>  // Invoke 是调用链码的方式,调用其他函数</span><br/><span>  func (a *Asset) Invoke(stub shim.ChaincodeStubInterface) peer.Response {</span><br/><span>    // 拿到函数和参数，我们设定有set函数和get函数，对应键值对的读写</span><br/><span>    fn,args := stub.GetFunctionAndParameters()</span><br/><span>  </span><br/><span>    var result string</span><br/><span>    var err error</span><br/><span>    if fn == &quot;set&quot; {//调用 set函数</span><br/><span>      result,err = set(stub,args)</span><br/><span>    }else {</span><br/><span>      //那就是get函数</span><br/><span>      result,err = get(stub,args)</span><br/><span>    }</span><br/><span>    if err != nil {</span><br/><span>      return shim.Error(err.Error())</span><br/><span>    }</span><br/><span>    return shim.Success([]byte(result))</span><br/><span>  }</span><br/><span>  </span><br/><span>  // 下面是set和get函数的具体实现</span><br/><span>  // set 存入键值对</span><br/><span>  func set(stub shim.ChaincodeStubInterface, args []string) (string, error) {</span><br/><span>    if len(args) != 2 {</span><br/><span>      return &quot;&quot;, fmt.Errorf(&quot;参数错误&quot;)</span><br/><span>    }</span><br/><span>    // 把键值对传入数据库状态</span><br/><span>    err := stub.PutState(args[0], []byte(args[1]))</span><br/><span>    if err != nil {</span><br/><span>      return &quot;&quot;, fmt.Errorf(&quot;创建资产失败:%s&quot;, args[0])</span><br/><span>    }</span><br/><span>    return args[1], nil</span><br/><span>  }</span><br/><span>  </span><br/><span>  // get 读取键值对</span><br/><span>  func get(stub shim.ChaincodeStubInterface, args []string) (string, error) {</span><br/><span>    if len(args) != 1 {</span><br/><span>      return &quot;&quot;, fmt.Errorf(&quot;参数错误&quot;)</span><br/><span>    }</span><br/><span>  </span><br/><span>    value, err := stub.GetState(args[0])</span><br/><span>    if err != nil {</span><br/><span>      return &quot;&quot;, fmt.Errorf(&quot;获取资产失败: %s ，发生错误为: %s&quot;, args[0], err)</span><br/><span>    }</span><br/><span>    if value == nil {</span><br/><span>      return &quot;&quot;, fmt.Errorf(&quot;不存在数据 %s&quot;, args[0])</span><br/><span>    }</span><br/><span>    return string(value), nil</span><br/><span>  }</span><br/><span>  </span><br/><span>  // 在 main函数里启动链码</span><br/><span>  func main() {</span><br/><span>    if err := shim.Start(new(Asset)); err != nil {</span><br/><span>      fmt.Printf(&quot;启动链码失败: %s&quot;, err)</span><br/><span>    }</span><br/><span>  }</span><br/><span> 复制代码</span></p><p><span>链码编写完毕</span></p><h3 id='go语言链码部署'><span>Go语言链码部署</span></h3><p><span>将自己编写的链码</span><code>main.go</code><span>文件放在 </span><code>fabric-samples/chaincode/</code><span> 下（没有就自己创建此文件夹）</span></p><ul><li><span>设置goproxy并下载依赖</span></li></ul><p><span>  export GO111MODULE=on</span><br/><span>  export GOPROXY=</span><a href='https://proxy.golang.com.cn,direct' target='_blank' class='url'>https://proxy.golang.com.cn,direct</a><span></span><br/><span>  go mod tidy</span><br/><span> 复制代码</span></p><p><span>进入测试网络目录</span></p><p><code>cd test-network</code></p><p><span>先启动测试网络 </span><code>. network up createChannel -c testchannel</code></p><p><span>网络启动好之后，部署链码 </span><code>. network deployCC -ccn demo -ccl go -ccp ../chaincode/ -c testchannel</code><span>，使用-c来指定通道名称</span></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/99407683be3144d2a13a9eb491f61fc7~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image-20220530上午125511644.png"></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/74b765e6c125406292e2f55deb7033c0~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image-20220530上午125551413.png"></p><h2 id='测试'><span>测试</span></h2><h4 id='设定环境变量'><span>设定环境变量</span></h4><p><span>进入fabric-samples/test-network</span></p><p><span>设定环境变量，使用peer0.org1.example.com 节点身份</span></p><p><span>  export CORE_PEER_TLS_ENABLED=true</span><br/><span>  export CORE_PEER_LOCALMSPID=&quot;Org1MSP&quot;</span><br/><span>  export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt</span><br/><span>  export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/</span><a href='mailto:Admin@org1.example.com' target='_blank' class='url'>Admin@org1.example.com</a><span>/msp</span><br/><span>  export CORE_PEER_ADDRESS=localhost:7051</span><br/><span>  export FABRIC_CFG_PATH=$PWD/../config/</span><br/><span>  export PATH=${PWD}/../bin:$PATH</span><br/><span> 复制代码</span></p><h4 id='调用链码'><span>调用链码</span></h4><p><span>调用编写的set函数，传入参数&quot;foo&quot;---&quot;bar&quot;，存储此键值对</span></p><p><span>  peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile &quot;${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem&quot; -C testchannel -n demo --peerAddresses localhost:7051 --tlsRootCertFiles organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c &#39;{&quot;function&quot;:&quot;set&quot;,&quot;Args&quot;:[&quot;foo&quot;,&quot;bar&quot;]}&#39;</span><br/><span> 复制代码</span></p><p><span>调用编写的get函数，传入参数“foo&quot;来查存入的值</span></p><p><span>  peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile &quot;${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem&quot; -C testchannel -n demo --peerAddresses localhost:7051 --tlsRootCertFiles organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c &#39;{&quot;function&quot;:&quot;get&quot;,&quot;Args&quot;:[&quot;foo&quot;]}&#39;</span><br/><span> 复制代码</span></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb415dcc5c7b448fa48366f90b753d69~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?" referrerpolicy="no-referrer" alt="image-20220530上午103529345.png"></p><p><span>下面是对这个调用指令的解析</span></p><p><span>  //该指令用于将已经提交到通道的链码进行函数的调用 </span><br/><span>  peer chaincode invoke </span><br/><span>  //本地端口 </span><br/><span>  -o localhost:7050 </span><br/><span>  //验证TLS连接时使用的排序节点主机名 </span><br/><span>  --ordererTLSHostnameOverride orderer.example.com </span><br/><span>  //与排序节点通信时使用 TLS </span><br/><span>  --tls </span><br/><span>  //包含排序端点的 PEM 编码可信证书的文件路径 </span><br/><span>  --cafile &quot;${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem&quot; </span><br/><span>  //在哪个通道上执行，应该是已经提交完成的通道上 </span><br/><span>  -C testchannel </span><br/><span>  //链码名字 </span><br/><span>  -n demo </span><br/><span>  //要连接的背书节点端口地址 --peerAddresses localhost:7051 </span><br/><span>  //如果TLS启用了，背书节点需要链接到TLS根证书的路径。 </span><br/><span>  --tlsRootCertFiles &quot;${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt&quot; </span><br/><span>  //第二个背书节点的端口地址 </span><br/><span>  --peerAddresses localhost:9051 </span><br/><span>  //第二个背书节点需要链接到TLS根证书的路径 </span><br/><span>  --tlsRootCertFiles &quot;${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt&quot; </span><br/><span>  //JSON 格式的链码的构造函数消息 </span><br/><span>  -c &#39;{&quot;function&quot;:&quot;set&quot;,&quot;Args&quot;:[&quot;foo&quot;,&quot;bar&quot;]}&#39;</span><br/><span> ​</span><br/><span> 复制代码</span></p><h2 id='总结'><span>总结</span></h2><ul><li><span>这里，我们主要实现了Fabric测试网络的部署，以及通过Go编程进行简要的数据交互。</span></li><li><span>从源码搭建Fabric网络需要修改大量的配置，过程复杂，没有基础的掘友可以从测试网络fabric-samples/test-network开始学起，通过对network.sh脚本的阅读，理清fabric网络的启动过程</span></li></ul><blockquote><p><span>关于network.sh脚本解析的内容，可以继续阅读 </span><a href='https://juejin.cn/post/7137913332320698381' title='https://juejin.cn/post/7137913332320698381'><span>juejin.cn/post/713791…</span></a></p></blockquote></div></div>
+</body>
+</html>
